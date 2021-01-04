@@ -14,7 +14,6 @@ exports.handler = async function(req) {
     return {
         statusCode: 200,
         headers: {
-          "Access-Control-Allow-Origin": "*",
           "content-type": "application/json; charset=utf-8"
         },
         body: JSON.stringify(picked)
