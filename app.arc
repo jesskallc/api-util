@@ -7,3 +7,4 @@ jesska-api-util
 get /mailchimp/list
 get /cloudinary
 post /site/settings
+post /site/frontpage
