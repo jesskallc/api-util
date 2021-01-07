@@ -5,3 +5,5 @@ jesska-api-util
 
 @http
 get /mailchimp/list
+get /cloudinary
+post /site/settings
