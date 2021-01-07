@@ -17,6 +17,5 @@ exports.handler = async function(req) {
           "content-type": "application/json; charset=utf-8"
         },
         body: JSON.stringify(picked)
-      }
-  
+    }  
 }
