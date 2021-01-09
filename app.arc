@@ -4,6 +4,7 @@ jesska-api-util
 @static
 
 @http
+get /status
 get /mailchimp/list
 get /cloudinary
 post /site/settings
