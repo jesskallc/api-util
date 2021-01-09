@@ -3,7 +3,6 @@ const { request, gql } = require('graphql-request')
 
 exports.handler = async function(req) {
   const {endpoint} = arc.http.helpers.bodyParser(req)
-  // const endpoint = `${base_url}/${graphql_endpoint}`
 
   const query = gql`
     {
@@ -20,6 +19,17 @@ exports.handler = async function(req) {
             events{
                 categories{
                     title
+                    posts{
+                        title
+                    cover{
+                        formats
+                    }
+                    excerpt
+                    author{
+                        username
+                    }
+                    posted_at
+                    }
                 }
             }
             Newsletter{
