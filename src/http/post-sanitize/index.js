@@ -11,7 +11,9 @@ exports.handler = async function(req) {
       },
       body: JSON.stringify({
         text: text,
-        clean: sanitizeHtml(text),
+        clean: sanitizeHtml(text, {
+          allowedTags: sanitizeHtml.defaults.allowedTags.concat([ 'img' ])         
+        }),
       })
   }
 }
